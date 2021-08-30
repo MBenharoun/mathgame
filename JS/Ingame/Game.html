@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/main.css">
+    <meta charset="UTF-8">
+    <title>Math Game</title>
+</head>
+<script src="Game.js"></script>
+
+<body>
+
+
+<div class="Player1">
+    Deck Player 1
+    <img id="Deck1" src="/asset/backcard.png"onclick=playp1(this.id)>
+    <img id="Deck2" src="/asset/backcard.png"onclick=playp1(this.id)>
+    <img id="Deck3" src="/asset/backcard.png"onclick=playp1(this.id)>
+    <img id="Deck4" src="/asset/backcard.png"onclick=playp1(this.id)>
+    <button onclick="drawCard1()">Reveal</button>
+    <label class="switch" id="p1">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+
+</div>
+<p class="Player1" id="Score1"> Score P1 : 1</p>
+
+Board:<div class="board" style="display:inline-block;">
+
+    <img id="Forms1" src="/asset/boardcard/forms/1.png">
+    <img id="Forms2" src="/asset/boardcard/forms/2.png">
+    <img id="Forms3" src="/asset/boardcard/forms/3.png">
+    <img id="Forms4" src="/asset/boardcard/forms/4.png">
+    <button id="randominv" onclick="randomBoard()">Reveal</button>
+    <button id="random" onclick="randomBoard()">Reveal</button>
+    <p></p>
+    <img id="Color1" src="/asset/backcard.png">
+    <img id="Color2" src="/asset/backcard.png">
+    <img id="Color3" src="/asset/backcard.png">
+    <img id="Color4" src="/asset/backcard.png">
+</div>
+    <p id="Score2"> Score P2 : 1</p>
+<div class="Player2">   Deck Player 2
+
+    <img id="Deck5" src="/asset/backcard.png" onclick=playp2(this.id)>
+    <img id="Deck6" src="/asset/backcard.png"onclick=playp2(this.id)>
+    <img id="Deck7" src="/asset/backcard.png"onclick=playp2(this.id)>
+    <img id="Deck8" src="/asset/backcard.png"onclick=playp2(this.id)>
+    <button onclick="drawCard2()">Reveal</button>
+    <label class="switch" id="p2">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+    Attack
+</div>
+
+
+</body>
+</html>
